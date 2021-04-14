@@ -1,0 +1,13 @@
+#' getDataset: this function allows the user to get the dataset
+#'
+#' @return  dataset called "vaccini"
+#' @export
+#'
+#' @examples getDataset()
+getDataset <- function(){
+
+  dataset <- read.csv(system.file("extdata", "somministrazioni-vaccini-summary-latest.csv", package = "CovidPackage"))
+  return(dataset)
+
+}
+
